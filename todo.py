@@ -15,6 +15,7 @@ def view_tasks():
 # Step 4: Delete a task
 def delete_task(task):
     tasks.pop(task)
+    print(f"Deleted: {task}")
 
 # Step 5: Mark task complete
 def mark_complete():
