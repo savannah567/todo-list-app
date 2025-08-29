@@ -18,8 +18,11 @@ def delete_task(task):
     print(f"Deleted: {task}")
 
 # Step 5: Mark task complete
-def mark_complete():
-    pass
+def mark_complete(index):
+    if 0 <= index < len(tasks):
+        tasks[index] = tasks[index] + " - Complete"
+
+
 
 # Step 6: Save/load tasks (extra stretch for today)
 #def save_tasks():
@@ -32,6 +35,6 @@ if __name__ == "__main__":
     view_tasks()
     delete_task(0)
     view_tasks()
-    #mark_complete(0)
-    #view_tasks()
+    mark_complete(0)
+    view_tasks()
     #save_tasks()
